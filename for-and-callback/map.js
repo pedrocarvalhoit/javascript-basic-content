@@ -8,7 +8,7 @@ const newAvarages = averages.map((nota) => {
 console.log(newAvarages);
 
 // Names
-const names = ["ana Julia", "Caio vinicius", "BIA silva"];
+const names = ["ana Julia", "Caio vinicius", "BIA silva", "Pedro"];
 
 const namesUpperCase = names.map((names)=> names.toUpperCase());
 console.log(namesUpperCase);
