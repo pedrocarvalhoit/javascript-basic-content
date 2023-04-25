@@ -1,5 +1,6 @@
-Precisaremos criar uma biblioteca que acesse arquivos Markdown do computador e busque, dentro deles, links.
+A interface File provê informações sobre arquivos e permite ao JavaScript  a acessar seu conteúdo.
 
-Antes de chegarmos à parte dos links, porém, vamos começar fazendo o JavaScript acessar um arquivo, que está em algum lugar do computador, e importar esse conteúdo. Esse é um problema relativamente comum e, para resolvê-lo, vamos aplicar uma biblioteca que já existe. O nome dela é FS (File System).
+São geralmente recuperados a partir de um objeto [FileList](https://developer.mozilla.org/pt-BR/docs/Web/API/FileList) que é retornado como resultado da seleção, pelo usuário, de arquivos através do elemento [<input>](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Input), a partir do objeto [DataTransfer](https://developer.mozilla.org/pt-BR/docs/Web/API/DataTransfer) utilizado em operações de arrastar e soltar, ou a partir da API `mozGetAsFile()` em um [HTMLCanvasElement](https://developer.mozilla.org/pt-BR/docs/Web/API/HTMLCanvasElement). Em Gecko, códigos com privilégiios podem criar objetos File representando qualquer arquivo local sem a intereção do usuário (veja [Implementation notes](https://developer.mozilla.org/pt-BR/docs/Web/API/File#implementation_notes) para mais informações.).
 
-Vamos voltar ao arquivo "index.js" e deletar os console.log utilizados na última aula. Vamos manter apenas a linha de importação da biblioteca Chalk, porque ainda a utilizaremos para assinalar e diferenciar os retornos do nosso terminal. Vamos descê-la para a segunda linha, porque na primeira importaremos a biblioteca FS.
+[Teste de retorno 400](https://httpstat.us/404).
+[gatinho salsicha](http://gatinhosalsicha.com.br/)

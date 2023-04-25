@@ -13,11 +13,8 @@ async function fileGeter(filePath){
     } catch (error) {
         errorHandler(error)
     }
-
 }
 
 fileGeter('./files/text.md');   
-console.log("---------")
-fileGeter('./files/tet.md');   
  
 
