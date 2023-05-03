@@ -1,14 +1,25 @@
 const user = {
     name: "Pedro",
     email:"pedro@pedro.com",
-    birthday: "",
-    role: "",
-    active: "",
+    birthday: "2021/21/01",
+    role: "student",
+    active: true,
     showInfos: function(){
         console.log(`Name: ${this.name}. Email: ${this.email}`)
     }
 };
 
-user.showInfos();
+const admin = {
+    name:"Thamires",
+    email:"thamires@mm.com",
+    role:"admin",
+    createCourse(){
+        console.log("Course created");
+    }
+}
 
-const showName = showInfos.bind(user);
+//admin herds from user
+Object.setPrototypeOf(admin, user)
+admin.showInfos();
+admin.createCourse();
+
