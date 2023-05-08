@@ -1,6 +1,6 @@
 import User from "./User.js";
 
-class Teacher extends User{
+export default class Teacher extends User{
     constructor(name, email, birthday, role = 'Teacher', active = true){
         super(name, email, birthday, role, active)
     }
@@ -10,5 +10,3 @@ class Teacher extends User{
     }
 }
 
-const newTeacher = new Teacher('Estefânea')
-console.log(newTeacher.aproveStudent('Andre', 'Phyton'))
