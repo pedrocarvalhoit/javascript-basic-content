@@ -1,16 +1,49 @@
 export default class User{
-    constructor(name, email, birthday, role, active = true){
-        this.name = name;
-        this.email = email;
-        this.birthday = birthday;
-        this.role = role || 'Student';
-        this.active = active;
+    #name
+    #lastName
+    #email
+    #birthday
+    #role
+    #active
+    constructor(name,lastName, email, birthday, role, active = true){
+        this.#name = name;
+        this.#lastName = lastName;
+        this.#email = email;
+        this.#birthday = birthday;
+        this.#role = role || 'Student';
+        this.#active = active;
     }
+
+    set name(newName) {
+        if (newName === '') {
+          throw new Error('Invalid format')
+        }
+        let [name, ...lastName] = newName.split(" ")
+        lastName = lastName.join(' ')
+        this.#name = name
+        this.#lastName = lastName
+      }
+
+      get name() {
+        return this.#name
+      }
+     
+      get lastName() {
+        return this.#lastName
+      }
+
+      get email(){
+        return this.#email
+      }
+
+      get active() {
+        return this.#active
+      }
 
     showInfos(){
-        return `${this.name}, and email is:${this.email}`
+        return `${this.#name}, and email is:${this.#email}. Student active is ${this.#active}`
     }
+
+
 }
 
-const newUser = new User('Pedro', 'pedro@gmail', '1992-01-01');
-console.log(newUser.showInfos());
