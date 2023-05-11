@@ -14,6 +14,7 @@ The contents of this repository include:
 - Objects and arrays
 - DOM manipulation
 - Events
+- OOP
 
 ## How to use
 
