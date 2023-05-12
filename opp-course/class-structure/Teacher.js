@@ -5,6 +5,10 @@ export default class Teacher extends User{
         super(name, email, birthday, role, active)
     }
 
+    showInfos(){
+        return `${this.name}and email:${this.email}.`
+    }
+
     aproveStudent(student, course){
         return `Student ${student}, aproved on ${course}`           
     }
