@@ -41,7 +41,7 @@ export default class User{
       }
 
     showInfos(){
-        return `${this.#name}, and email is:${this.#email}. Student active is ${this.#active}`
+        return `${this.#name}, and email is: ${this.#email}. Student active is ${this.#active}`
     }
 
 
